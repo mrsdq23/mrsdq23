@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+ <title>ЗАНЯТИЕ 5.9.  ВЫПУКЛОСТЬ И ВОГНУТОСТЬ ГРАФИКА
+ФУНКЦИИ, ТОЧКИ ПЕРЕГИБА </title>
+ <!-- ImageReady Preload Script (Untitled-1.psd) -->
+<SCRIPT TYPE="text/javascript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		Knopka3_01_over = newImage("images/Knopka3_01-over.gif");
+		Knopka3_01_down = newImage("images/Knopka3_01-down.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+</head>
+<body ONLOAD="preloadImages();">
+ <TABLE BORDER="0" align=CENTER width=50%>
+<TR><TD align=RIGHT><!-- ImageReady Slices (Knopka4.psd) -->
+<A HREF="5.8.html"
+	ONMOUSEOVER="changeImages('Knopka4_01', 'images/Knopka4_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka4_01', 'images/Knopka4_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka4_01', 'images/Knopka4_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka4_01', 'images/Knopka4_01-over.gif'); return true;">
+	<IMG NAME="Knopka4_01" SRC="images/Knopka4_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --></td>
+<td valign=middle align=CENTER>
+<!-- ImageReady Slices (Untitled-1.psd) -->
+<A HREF="content.html"
+	ONMOUSEOVER="changeImages('Knopka3_01', 'images/Knopka3_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka3_01', 'images/Knopka3_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka3_01', 'images/Knopka3_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka3_01', 'images/Knopka3_01-over.gif'); return true;">
+	<IMG NAME="Knopka3_01" SRC="images/Knopka3_01.gif" WIDTH=119 HEIGHT=42 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --> </td>
+
+<td align=Left><!-- ImageReady Slices (Knopka5.psd) -->
+<A HREF="5.10.html"
+	ONMOUSEOVER="changeImages('Knopka5_01', 'images/Knopka5_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka5_01', 'images/Knopka5_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka5_01', 'images/Knopka5_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka5_01', 'images/Knopka5_01-over.gif'); return true;">
+	<IMG NAME="Knopka5_01" SRC="images/Knopka5_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --></td></table>
+
+
+<h2 align="Center"> ЗАНЯТИЕ 5.9.  ВЫПУКЛОСТЬ И ВОГНУТОСТЬ ГРАФИКА
+ФУНКЦИИ, ТОЧКИ ПЕРЕГИБА
+ </h2>
+   <H2 align="center"><font  color="#22371E"> Контрольные вопросы</font></H2>
+ <FONT  SIZE="4">
+  <OL>
+  <LI>Что означает выпуклость и вогнутость графика функции?</LI>
+<LI>Как значения второй производной влияют на выпуклость и вогнутость	 графика функции?</LI>
+ <LI> Что называют точкой перегиба?</LI>
+  <LI>При каких условиях график функции имеет точку перегиба?</LI>
+ </OL>
+  <H2 align="center"><font  color="#22371E"> Задачи</font></H2>
+   <FONT  SIZE="4">
+  <OL>
+  <LI>	Найти точки перегиба и интервалы выпуклости и вогнутости графика	функции.
+<br />1)<img src="ris/5.9/form5.9.1.gif"  />	  2)   <img src="ris/5.9/form5.9.2.gif"  />
+<br />3)	<img src="ris/5.9/form5.9.3.gif"  />  4) <img src="ris/5.9/form5.9.4.gif"  />
+	 5)<img src="ris/5.9/form5.9.5.gif"  />
+<br />6) <img src="ris/5.9/form5.9.6.gif"  />	 7) <img src="ris/5.9/form5.9.7.gif"  />
+	 8) <img src="ris/5.9/form5.9.8.gif"  />
+</LI>
+<LI>Выяснить вид графика функции, если известно, что на интервале  <img src="ris/5.9/form5.9.9.gif"  />
+<br />1)  <img src="ris/5.9/form5.9.10.gif"  />	2)  <img src="ris/5.9/form5.9.11.gif"  />
+<br />3) <img src="ris/5.9/form5.9.12.gif"  />	 4)  <img src="ris/5.9/form5.9.13.gif"  />
+</LI>
+ <LI> При каких значениях <img src="ris/5.9/form5.9.14.gif"  />  график функции
+ <img src="ris/5.9/form5.9.15.gif"  /> имеет точки	 перегиба?</LI>
+  <LI>При каких значениях <img src="ris/5.9/form5.9.16.gif"  />  точка  <img src="ris/5.9/form5.9.17.gif"  />
+   служит точкой перегиба графика	функции  <img src="ris/5.9/form5.9.18.gif"  />?</LI>
+ </OL>
+
+
+   <H2 align="center"><font  color="#22371E">Ответы </font></H2>
+	 <OL>
+  <LI>1)<img src="ris/5.9/form5.9.19.gif"  />  точка перегиба,<img src="ris/5.9/form5.9.20.gif"  />
+	 выпуклость, <img src="ris/5.9/form5.9.21.gif"  />  вогнутость,
+<br />2)<img src="ris/5.9/form5.9.22.gif"  />  точки перегиба,  <img src="ris/5.9/form5.9.23.gif"  />
+ выпуклость, <img src="ris/5.9/form5.9.24.gif"  />  вогнутость,
+<br />3) <img src="ris/5.9/form5.9.25.gif"  /> точки перегиба, <img src="ris/5.9/form5.9.26.gif"  />
+ выпуклость,	<img src="ris/5.9/form5.9.27.gif"  /> вогнутость,
+<br />4) точек перегиба нет, график вогнутый,
+<br />5) <img src="ris/5.9/form5.9.28.gif"  /> точки перегиба, <img src="ris/5.9/form5.9.29.gif"  />
+ выпуклость,
+ <img src="ris/5.9/form5.9.30.gif"  />вогнутость,
+<br />6) <img src="ris/5.9/form5.9.31.gif"  /> точки перегиба,
+ <img src="ris/5.9/form5.9.32.gif"  />выпуклость, <img src="ris/5.9/form5.9.33.gif"  />  вогнутость,
+<br />7) <img src="ris/5.9/form5.9.34.gif"  /> точка перегиба,
+<img src="ris/5.9/form5.9.35.gif"  /> выпуклость,<img src="ris/5.9/form5.9.36.gif"  />  вогнутость,
+<br />8) точек перегиба нет, график вогнутый;
+</LI>
+<LI>&nbsp;</LI>
+ <LI><img src="ris/5.9/form5.9.37.gif"  /> ;   </LI>
+  <LI>  <img src="ris/5.9/form5.9.38.gif"  /></LI>
+ </OL>
+
+
+
+   <br /><br />
+ <TABLE BORDER="0" align=CENTER width=50%>
+<TR><TD align=RIGHT><!-- ImageReady Slices (Knopka4.psd) -->
+<A HREF="5.8.html"
+	ONMOUSEOVER="changeImages('Knopka8_01', 'images/Knopka8_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka8_01', 'images/Knopka8_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka8_01', 'images/Knopka8_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka8_01', 'images/Knopka8_01-over.gif'); return true;">
+	<IMG NAME="Knopka8_01" SRC="images/Knopka8_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+<td valign=middle align=CENTER>
+<!-- ImageReady Slices (Knopka3.psd) -->
+<A HREF="content.html"
+	ONMOUSEOVER="changeImages('Knopka7_01', 'images/Knopka7_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka7_01', 'images/Knopka7_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka7_01', 'images/Knopka7_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka7_01', 'images/Knopka7_01-over.gif'); return true;">
+	<IMG NAME="Knopka7_01" SRC="images/Knopka7_01.gif" WIDTH=119 HEIGHT=42 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+<td align=Left>
+<!-- ImageReady Slices (Knopka5.psd) -->
+<A HREF="5.10.html"
+	ONMOUSEOVER="changeImages('Knopka9_01', 'images/Knopka9_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka9_01', 'images/Knopka9_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka9_01', 'images/Knopka9_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka9_01', 'images/Knopka9_01-over.gif'); return true;">
+	<IMG NAME="Knopka9_01" SRC="images/Knopka9_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+ </table>
+
+
+
+
+
+</body>
+</html>

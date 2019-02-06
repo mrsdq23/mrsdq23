@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+ <title>ЗАНЯТИЕ 2.2. ЛИНЕЙНЫЕ ОПЕРАЦИИ НАД ВЕКТОРАМИ</title>
+ <!-- ImageReady Preload Script (Untitled-1.psd) -->
+<SCRIPT TYPE="text/javascript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		Knopka3_01_over = newImage("images/Knopka3_01-over.gif");
+		Knopka3_01_down = newImage("images/Knopka3_01-down.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+</head>
+<body ONLOAD="preloadImages();">
+ <TABLE BORDER="0" align=CENTER width=50%>
+<TR><TD align=RIGHT><!-- ImageReady Slices (Knopka4.psd) -->
+<A HREF="2.1.html"
+	ONMOUSEOVER="changeImages('Knopka4_01', 'images/Knopka4_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka4_01', 'images/Knopka4_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka4_01', 'images/Knopka4_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka4_01', 'images/Knopka4_01-over.gif'); return true;">
+	<IMG NAME="Knopka4_01" SRC="images/Knopka4_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --></td>
+<td valign=middle align=CENTER>
+<!-- ImageReady Slices (Untitled-1.psd) -->
+<A HREF="content.html"
+	ONMOUSEOVER="changeImages('Knopka3_01', 'images/Knopka3_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka3_01', 'images/Knopka3_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka3_01', 'images/Knopka3_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka3_01', 'images/Knopka3_01-over.gif'); return true;">
+	<IMG NAME="Knopka3_01" SRC="images/Knopka3_01.gif" WIDTH=119 HEIGHT=42 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --> </td>
+
+<td align=Left><!-- ImageReady Slices (Knopka5.psd) -->
+<A HREF="2.3.html"
+	ONMOUSEOVER="changeImages('Knopka5_01', 'images/Knopka5_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka5_01', 'images/Knopka5_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka5_01', 'images/Knopka5_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka5_01', 'images/Knopka5_01-over.gif'); return true;">
+	<IMG NAME="Knopka5_01" SRC="images/Knopka5_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --></td></table>
+
+
+<h2 align="Center"> ЗАНЯТИЕ 2.2. ЛИНЕЙНЫЕ ОПЕРАЦИИ НАД ВЕКТОРАМИ</h2>
+ <h2 align="Center">Контрольные вопросы </h2>
+  <font size=4>
+  <OL><LI>	Что такое орт вектора?	 </LI>
+<LI>   Чему равны координаты орта вектора?   </LI>
+<LI>	 О чем говорит пропорциональность координат двух векторов? </LI>
+<LI>	  Каким законам подчиняются операции сложения и вычитания  векторов? </LI>
+<LI>	  Как производятся линейные операции над векторами, заданными разложениями в одном и том же
+базисе? </LI>
+<LI>	 Что происходит при умножении вектора на число? </LI>
+</OL>
+  <H2 align="center"><font  color="#22371E"> Задачи</font></H2>
+   <FONT  SIZE="4">
+
+   <OL> <LI>  По данным векторам
+   <img src="ris/2.2/form2.2.1.gif" height="25" width="21" alt="" border="0" />
+  и <img src="ris/2.2/form2.2.2.gif" height="29" width="20" alt="" border="0" />
+	  построить следующие векторы:
+	 <img src="ris/2.2/form2.2.1.gif" height="25" width="21" alt="" border="0" />
+		 + <img src="ris/2.2/form2.2.2.gif" height="29" width="20" alt="" border="0" />,
+		 <img src="ris/2.2/form2.2.1.gif" height="25" width="21" alt="" border="0" /> -
+		<img src="ris/2.2/form2.2.2.gif" height="29" width="20" alt="" border="0" /> ,
+		<img src="ris/2.2/form2.2.2.gif" height="29" width="20" alt="" border="0" />
+		 - <img src="ris/2.2/form2.2.1.gif" height="25" width="21" alt="" border="0" />,
+			- <img src="ris/2.2/form2.2.1.gif" height="25" width="21" alt="" border="0" />-
+		  <img src="ris/2.2/form2.2.2.gif" height="29" width="20" alt="" border="0" />  .	</LI>
+ <LI>Определить длины суммы и разности векторов
+  <img src="ris/2.2/form2.2.3.gif" height="25" width="95" alt="" border="0" /> и
+  <img src="ris/2.2/form2.2.4.gif" height="30" width="107" alt="" border="0" /> . </LI>
+ <LI>Векторы <img src="ris/2.2/form2.2.1.gif" height="25" width="21" alt="" border="0" />
+  и <img src="ris/2.2/form2.2.2.gif" height="29" width="20" alt="" border="0" />	образуют угол
+   120&deg; ,
+	причем <img src="ris/2.2/form2.2.5.gif" height="39" width="120" alt="" border="0" /> .
+	 Определить  <img src="ris/2.2/form2.2.6.gif" height="41" width="61" alt="" border="0" /> и
+	 <img src="ris/2.2/form2.2.7.gif" height="40" width="57" alt="" border="0" />  .</LI>
+ <LI>Определить, при  каких  <img src="ris/2.2/form2.2.11.gif" height="23" width="13" alt="" border="0" />
+  и <img src="ris/2.2/form2.2.12.gif" height="22" width="19" alt="" border="0" />  векторы
+  <img src="ris/2.2/form2.2.8.gif" height="30" width="145" alt="" border="0" /> и
+  <img src="ris/2.2/form2.2.9.gif" height="30" width="146" alt="" border="0" />	коллинеарны. </LI>
+ <LI>Установить, служат ли точки А(2,3,-6), В(7,3,2), С(12,7,3), Д(12,11,-4)
+  вершинами трапеции АВСД.</LI>
+  <LI>Найдите орт вектора <img src="ris/2.2/form2.2.10.gif" height="26" width="110" alt="" border="0" /> .
+  </LI>
+  <LI>На плоскости даны векторы <img src="ris/2.1/form2.1.30.gif" height="25" width="84" alt="" border="0" />
+	 и <img src="ris/2.1/form2.1.31.gif" height="30" width="86" alt="" border="0" />   в базисе
+	 <img src="ris/2.1/form2.1.32.gif" height="27" width="58" alt="" border="0" /> . Найти разложение
+	  вектора <img src="ris/2.2/form2.2.13.gif" height="24" width="81" alt="" border="0" /> ,
+   принимая в качестве базисных, если это возможно, первые два вектора.</LI>
+  <LI>Даны три вектора <img src="ris/2.2/form2.2.14.gif" height="28" width="308" alt="" border="0" />
+	в базисе <img src="ris/2.2/form2.2.15.gif" height="27" width="70" alt="" border="0" /> .
+	 Если векторы  <img src="ris/2.2/form2.2.16.gif" height="28" width="60" alt="" border="0" /> образуют
+	 базис в <img src="ris/2.2/form2.2.18.gif" height="24" width="24" alt="" border="0" /> , то найти
+  разложение вектора  <img src="ris/2.2/form2.2.17.gif" height="29" width="106" alt="" border="0" />
+   по этому базису.</LI>
+
+</OL>
+   <H2 align="center"><font  color="#22371E">Ответы </font></H2>
+ <OL> <LI>&nbsp;</LI>
+<LI><img src="ris/2.2/form2.2.19.gif" height="37" width="84" alt="" border="0" /> ,
+<img src="ris/2.2/form2.2.20.gif" height="37" width="91" alt="" border="0" />;   </LI>
+ <LI> <img src="ris/2.2/form2.2.21.gif" height="37" width="106" alt="" border="0" />,
+ <img src="ris/2.2/form2.2.22.gif" height="37" width="83" alt="" border="0" />  ;   </LI>
+ <LI> <img src="ris/2.2/form2.2.23.gif" height="27" width="118" alt="" border="0" />;</LI>
+ <LI>служат, ВС //АД;</LI>
+  <LI> <img src="ris/2.2/form2.2.24.gif" height="54" width="158" alt="" border="0" />;</LI>
+   <LI><img src="ris/2.2/form2.2.25.gif" height="28" width="95" alt="" border="0" /> ;</LI>
+	<LI> <img src="ris/2.2/form2.2.26.gif" height="26" width="129" alt="" border="0" />.</LI>
+ </OL>
+   <br /><br />
+ <TABLE BORDER="0" align=CENTER width=50%>
+<TR><TD align=RIGHT><!-- ImageReady Slices (Knopka4.psd) -->
+<A HREF="2.1.html"
+	ONMOUSEOVER="changeImages('Knopka8_01', 'images/Knopka8_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka8_01', 'images/Knopka8_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka8_01', 'images/Knopka8_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka8_01', 'images/Knopka8_01-over.gif'); return true;">
+	<IMG NAME="Knopka8_01" SRC="images/Knopka8_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+<td valign=middle align=CENTER>
+<!-- ImageReady Slices (Knopka3.psd) -->
+<A HREF="content.html"
+	ONMOUSEOVER="changeImages('Knopka7_01', 'images/Knopka7_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka7_01', 'images/Knopka7_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka7_01', 'images/Knopka7_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka7_01', 'images/Knopka7_01-over.gif'); return true;">
+	<IMG NAME="Knopka7_01" SRC="images/Knopka7_01.gif" WIDTH=119 HEIGHT=42 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+<td align=Left>
+<!-- ImageReady Slices (Knopka5.psd) -->
+<A HREF="2.3.html"
+	ONMOUSEOVER="changeImages('Knopka9_01', 'images/Knopka9_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka9_01', 'images/Knopka9_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka9_01', 'images/Knopka9_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka9_01', 'images/Knopka9_01-over.gif'); return true;">
+	<IMG NAME="Knopka9_01" SRC="images/Knopka9_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+ </table>
+
+
+
+
+
+</body>
+</html>

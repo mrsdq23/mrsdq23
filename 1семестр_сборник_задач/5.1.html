@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+ <title>  5. ДИФФЕРЕНЦИАЛЬНОЕ ИСЧИСЛЕНИЕ ФУНКЦИИ
+ОДНОЙ ПЕРЕМЕННОЙ</title>
+ <!-- ImageReady Preload Script (Untitled-1.psd) -->
+<SCRIPT TYPE="text/javascript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		Knopka3_01_over = newImage("images/Knopka3_01-over.gif");
+		Knopka3_01_down = newImage("images/Knopka3_01-down.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+</head>
+<body ONLOAD="preloadImages();">
+ <TABLE BORDER="0" align=CENTER width=50%>
+<TR><TD align=RIGHT><!-- ImageReady Slices (Knopka4.psd) -->
+<A HREF="4.5.html"
+	ONMOUSEOVER="changeImages('Knopka4_01', 'images/Knopka4_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka4_01', 'images/Knopka4_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka4_01', 'images/Knopka4_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka4_01', 'images/Knopka4_01-over.gif'); return true;">
+	<IMG NAME="Knopka4_01" SRC="images/Knopka4_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --></td>
+<td valign=middle align=CENTER>
+<!-- ImageReady Slices (Untitled-1.psd) -->
+<A HREF="content.html"
+	ONMOUSEOVER="changeImages('Knopka3_01', 'images/Knopka3_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka3_01', 'images/Knopka3_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka3_01', 'images/Knopka3_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka3_01', 'images/Knopka3_01-over.gif'); return true;">
+	<IMG NAME="Knopka3_01" SRC="images/Knopka3_01.gif" WIDTH=119 HEIGHT=42 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --> </td>
+
+<td align=Left><!-- ImageReady Slices (Knopka5.psd) -->
+<A HREF="5.2.html"
+	ONMOUSEOVER="changeImages('Knopka5_01', 'images/Knopka5_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka5_01', 'images/Knopka5_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka5_01', 'images/Knopka5_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka5_01', 'images/Knopka5_01-over.gif'); return true;">
+	<IMG NAME="Knopka5_01" SRC="images/Knopka5_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --></td></table>
+ <H1 align="center"><font  color="#22371E">5. ДИФФЕРЕНЦИАЛЬНОЕ ИСЧИСЛЕНИЕ ФУНКЦИИ
+ОДНОЙ ПЕРЕМЕННОЙ</font></H1>
+
+<h2 align="Center">  ЗАНЯТИЕ 5.1.  ДИФФЕРЕНЦИРОВАНИЕ ФУНКЦИЙ
+ </h2>
+   <H2 align="center"><font  color="#22371E"> Контрольные вопросы</font></H2>
+ <FONT  SIZE="4">
+
+ <OL><LI> Чему равны производные основных элементарных функций?   </LI>
+<LI> Как определяется производная сложной функции? </LI>
+<LI> Как определяется производная суммы, произведения, частного?   </LI>
+  </OL>
+  <H2 align="center"><font  color="#22371E"> Задачи</font></H2>
+   <FONT  SIZE="4">
+   <OL><LI>Продифференцировать функцию:
+<br />1) <img src="ris/5.1/form5.1.1.gif"  />  ,	2) <img src="ris/5.1/form5.1.2.gif"  />   ,
+<br />3) <img src="ris/5.1/form5.1.3.gif"  />   ,   4)  <img src="ris/5.1/form5.1.4.gif"  />  ,
+<br />5)  <img src="ris/5.1/form5.1.5.gif"  />  ,   6)  <img src="ris/5.1/form5.1.6.gif"  />  ,
+<br />7)  <img src="ris/5.1/form5.1.7.gif"  />  ,   8)   <img src="ris/5.1/form5.1.8.gif"  /> ,
+<br />9)  <img src="ris/5.1/form5.1.9.gif"  />  ,   10) <img src="ris/5.1/form5.1.10.gif"  />   ,
+<br />11)<img src="ris/5.1/form5.1.11.gif"  />   ,	12) <img src="ris/5.1/form5.1.12.gif"  />   ,
+<br />13)  <img src="ris/5.1/form5.1.13.gif"  /> ,	14)   <img src="ris/5.1/form5.1.14.gif"  /> ,
+<br />15) <img src="ris/5.1/form5.1.15.gif"  />  ,	16)  <img src="ris/5.1/form5.1.16.gif"  />  ,
+<br />17) <img src="ris/5.1/form5.1.17.gif"  />  ,	18)   <img src="ris/5.1/form5.1.18.gif"  /> ,
+<br />19)  <img src="ris/5.1/form5.1.19.gif"  /> ,	 20) <img src="ris/5.1/form5.1.20.gif"  />   .
+<LI> <img src="ris/5.1/form5.1.21.gif"  />  . Найти <img src="ris/5.1/form5.1.22.gif"  />   </LI>
+<LI> <img src="ris/5.1/form5.1.23.gif"  />	Найти  <img src="ris/5.1/form5.1.24.gif"  />   </LI>
+ <LI> <img src="ris/5.1/form5.1.25.gif"  />	Найти  <img src="ris/5.1/form5.1.26.gif"  />  </LI>
+<LI> <img src="ris/5.1/form5.1.27.gif"  />   При каких значениях <img src="ris/5.1/form5.1.28.gif"  />  :
+1)<img src="ris/5.1/form5.1.29.gif"  />   ,   2) <img src="ris/5.1/form5.1.30.gif"  />  .	 </LI>
+<LI>   Используя логарифмирование, продифференцировать функцию:
+<br />1) <img src="ris/5.1/form5.1.31.gif"  /> ,	 2)<img src="ris/5.1/form5.1.32.gif"  />   ,
+   3) <img src="ris/5.1/form5.1.33.gif"  />  , <br /> 4) <img src="ris/5.1/form5.1.34.gif"  />  ,
+	 5)<img src="ris/5.1/form5.1.35.gif"  />   , 6) <img src="ris/5.1/form5.1.36.gif"  />  .   </LI>
+ </OL>
+
+   <H2 align="center"><font  color="#22371E">Ответы </font></H2>
+  <OL><LI>  1)<img src="ris/5.1/form5.1.37.gif"  />	,  2)<img src="ris/5.1/form5.1.38.gif"  />   ,
+  3) <img src="ris/5.1/form5.1.39.gif"  />  ,	   4)<img src="ris/5.1/form5.1.40.gif"  />   ,
+<br />5) <img src="ris/5.1/form5.1.41.gif"  />  ,	   6) <img src="ris/5.1/form5.1.42.gif"  />  ,
+   7)<img src="ris/5.1/form5.1.43.gif"  />   ,  <br />  8) <img src="ris/5.1/form5.1.44.gif"  />  ,
+	 9) <img src="ris/5.1/form5.1.45.gif"  />  ,   10) <img src="ris/5.1/form5.1.46.gif"  />  ,
+	   11)  <img src="ris/5.1/form5.1.47.gif"  /> , <br />12) <img src="ris/5.1/form5.1.48.gif"  />  ,
+			 13) <img src="ris/5.1/form5.1.49.gif"  />  ,   14) <img src="ris/5.1/form5.1.50.gif"  />  ,
+<br />15)<img src="ris/5.1/form5.1.51.gif"  />   ,   16)<img src="ris/5.1/form5.1.52.gif"  />   ,
+  17) <img src="ris/5.1/form5.1.53.gif"  />  , <br /> 18) <img src="ris/5.1/form5.1.54.gif"  />  ,
+  19) <img src="ris/5.1/form5.1.55.gif"  />  , <br />  20) <img src="ris/5.1/form5.1.56.gif"  />  ;   </LI>
+<LI><img src="ris/5.1/form5.1.57.gif"  />	</LI>
+<LI>  <img src="ris/5.1/form5.1.58.gif"  />   </LI>
+ <LI> <img src="ris/5.1/form5.1.59.gif"  />   </LI>
+<LI> 1) <img src="ris/5.1/form5.1.60.gif"  />	 2)<img src="ris/5.1/form5.1.61.gif"  />	</LI>
+<LI>  1) <img src="ris/5.1/form5.1.62.gif"  />  ,   2) <img src="ris/5.1/form5.1.63.gif"  />  ,
+<br />3)<img src="ris/5.1/form5.1.64.gif"  />   ,
+<br />4) <img src="ris/5.1/form5.1.65.gif"  />  ,
+<br />5) <img src="ris/5.1/form5.1.66.gif"  />  ,  <br /> 6)<img src="ris/5.1/form5.1.67.gif"  />   .
+  </LI>
+ </OL>
+
+
+
+   <br /><br />
+ <TABLE BORDER="0" align=CENTER width=50%>
+<TR><TD align=RIGHT><!-- ImageReady Slices (Knopka4.psd) -->
+<A HREF="4.5.html"
+	ONMOUSEOVER="changeImages('Knopka8_01', 'images/Knopka8_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka8_01', 'images/Knopka8_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka8_01', 'images/Knopka8_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka8_01', 'images/Knopka8_01-over.gif'); return true;">
+	<IMG NAME="Knopka8_01" SRC="images/Knopka8_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+<td valign=middle align=CENTER>
+<!-- ImageReady Slices (Knopka3.psd) -->
+<A HREF="content.html"
+	ONMOUSEOVER="changeImages('Knopka7_01', 'images/Knopka7_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka7_01', 'images/Knopka7_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka7_01', 'images/Knopka7_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka7_01', 'images/Knopka7_01-over.gif'); return true;">
+	<IMG NAME="Knopka7_01" SRC="images/Knopka7_01.gif" WIDTH=119 HEIGHT=42 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+<td align=Left>
+<!-- ImageReady Slices (Knopka5.psd) -->
+<A HREF="5.2.html"
+	ONMOUSEOVER="changeImages('Knopka9_01', 'images/Knopka9_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka9_01', 'images/Knopka9_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka9_01', 'images/Knopka9_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka9_01', 'images/Knopka9_01-over.gif'); return true;">
+	<IMG NAME="Knopka9_01" SRC="images/Knopka9_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+ </table>
+
+
+
+
+
+</body>
+</html>

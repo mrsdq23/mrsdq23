@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+ <title> ЗАНЯТИЕ 3.5. КРИВЫЕ ВТОРОГО ПОРЯДКА: ОКРУЖНОСТЬ, ЭЛЛИПС </title>
+ <!-- ImageReady Preload Script (Untitled-1.psd) -->
+<SCRIPT TYPE="text/javascript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		Knopka3_01_over = newImage("images/Knopka3_01-over.gif");
+		Knopka3_01_down = newImage("images/Knopka3_01-down.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+</head>
+<body ONLOAD="preloadImages();">
+ <TABLE BORDER="0" align=CENTER width=50%>
+<TR><TD align=RIGHT><!-- ImageReady Slices (Knopka4.psd) -->
+<A HREF="3.5.html"
+	ONMOUSEOVER="changeImages('Knopka4_01', 'images/Knopka4_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka4_01', 'images/Knopka4_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka4_01', 'images/Knopka4_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka4_01', 'images/Knopka4_01-over.gif'); return true;">
+	<IMG NAME="Knopka4_01" SRC="images/Knopka4_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --></td>
+<td valign=middle align=CENTER>
+<!-- ImageReady Slices (Untitled-1.psd) -->
+<A HREF="content.html"
+	ONMOUSEOVER="changeImages('Knopka3_01', 'images/Knopka3_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka3_01', 'images/Knopka3_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka3_01', 'images/Knopka3_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka3_01', 'images/Knopka3_01-over.gif'); return true;">
+	<IMG NAME="Knopka3_01" SRC="images/Knopka3_01.gif" WIDTH=119 HEIGHT=42 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --> </td>
+
+<td align=Left><!-- ImageReady Slices (Knopka5.psd) -->
+<A HREF="3.7.html"
+	ONMOUSEOVER="changeImages('Knopka5_01', 'images/Knopka5_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka5_01', 'images/Knopka5_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka5_01', 'images/Knopka5_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka5_01', 'images/Knopka5_01-over.gif'); return true;">
+	<IMG NAME="Knopka5_01" SRC="images/Knopka5_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --></td></table>
+
+
+<h2 align="Center">  ЗАНЯТИЕ 3.6. КРИВЫЕ ВТОРОГО ПОРЯДКА: ГИПЕРБОЛА, ПАРАБОЛА</h2>
+ <h2 align="Center">Контрольные вопросы </h2>
+  <font size=4>
+   <OL><LI>	   Дать определения гиперболы, параболы.	  </LI>
+<LI>	 Напишите канонические уравнения гиперболы и параболы, объясните смысл величин, входящих в эти уравнения.	  </LI>
+ <LI>	  Напишите уравнения директрис, асимптот гиперболы, покажите на чертеже их расположение относительно гиперболы.	  </LI>
+<LI>	 Чему равен эксцентриситет параболы? Покажите на чертеже расположение директрисы относительно параболы.		  </LI>
+</OL>
+  <H2 align="center"><font  color="#22371E"> Задачи</font></H2>
+   <FONT  SIZE="4">
+
+   <OL><LI>	Составить уравнение гиперболы, фокусы которой расположены на оси абсцисс,
+	симметричны относительно начала координат, зная, кроме этого, что:
+<br />а)  расстояние между фокусами  2 с = 6  и эксцентриситет <img src="ris/3.6/form3.6.1.gif" />  ;
+<br />б)  ось  2 а = 16   и  эксцентриситет  <img src="ris/3.6/form3.6.2.gif" />  ;
+<br />в)  уравнение асимптот   <img src="ris/3.6/form3.6.3.gif" />   и расстояние между фокусами  2 с = 20;
+<br />г)  расстояние между директрисами равно  <img src="ris/3.6/form3.6.4.gif" />	и расстояние между фокусами
+ 2 с = 26.  </LI>
+  <LI>	Дана точка М1<img src="ris/3.6/form3.6.5.gif" />	на гиперболе <img src="ris/3.6/form3.6.6.gif" />  .
+  Составить уравнения	 прямых, на которых лежат
+  фокальные радиусы точки М1.</LI>
+<LI>	  Убедившись, что точка М1 <img src="ris/3.6/form3.6.7.gif" />   лежит на гиперболе
+<img src="ris/3.6/form3.6.8.gif" />  ,	  определить фокальные радиусы  точки М1.  </LI>
+<LI>	 Эксцентриситет гиперболы <img src="ris/3.6/form3.6.9.gif" />   , центр её лежит в начале координат, один
+из фокусов F (12; 0). Вычислить расстояние от точки М1 гиперболы
+с абсциссой, равной 13, до директрисы, соответствующей данному фокусу. </LI>
+ <LI>Определить точки гиперболы <img src="ris/3.6/form3.6.10.gif" />  , расстояние которых до правого
+	  фокуса равно 4,5.</LI>
+ <LI>Установить, что каждое из следующих уравнений определяет гиперболу,
+и найти координаты её центра С, полуоси, эксцентриситет, уравнения	  асимптот и директрис:
+<br />а) <img src="ris/3.6/form3.6.11.gif" />   ;
+<br />б)  <img src="ris/3.6/form3.6.13.gif" />  .	   </LI>
+  <LI>Составить уравнение параболы, вершина которой находится в начале	 координат, зная что:
+<br />а) парабола расположена в правой полуплоскости симметрично относительно оси Ох, и её параметр
+ р = 3;
+<br />б) парабола расположена в левой полуплоскости симметрично относительно оси Ох, и её параметр р = 0,5;
+<br />в)  парабола расположена в верхней полуплоскости симметрично относительно оси Оу, и её параметр
+  р = <img src="ris/3.6/form3.6.14.gif" />  ;
+<br />г) парабола расположена в нижней полуплоскости симметрично относи-тельно оси Оу, и её параметр
+р = 3.  </LI>
+ <LI>Найти фокус F и уравнение директрисы параболы  <img src="ris/3.6/form3.6.15.gif" />  . </LI>
+ <LI> На параболе  <img src="ris/3.6/form3.6.16.gif" />  найти точки, фокальный радиус которых равен 13.</LI>
+  <LI>Составить уравнение параболы, если даны её фокус F (7; 2) и директриса
+  <img src="ris/3.6/form3.6.17.gif" />  . </LI>
+ <LI> Определить точки пересечения прямой <img src="ris/3.6/form3.6.18.gif" />   и параболы
+ <img src="ris/3.6/form3.6.19.gif" />  .</LI>
+  <LI>В следующих случаях определить, как расположена данная прямая относительно данной параболы
+  - пересекается ли, касается или проходит вне её:
+<br />а)<img src="ris/3.6/form3.6.20.gif" />	,  <img src="ris/3.6/form3.6.21.gif" />   ;
+<br />б)  <img src="ris/3.6/form3.6.22.gif" />  ,  <img src="ris/3.6/form3.6.23.gif" />   ;
+<br />в)  <img src="ris/3.6/form3.6.24.gif" />  ,  <img src="ris/3.6/form3.6.25.gif" />   .
+</LI>	</OL>
+   <H2 align="center"><font  color="#22371E">Ответы </font></H2>
+	<OL><LI> а)<img src="ris/3.6/form3.6.51.gif" /> ,   б)<img src="ris/3.6/form3.6.26.gif" />	,
+	  в) <img src="ris/3.6/form3.6.27.gif" />   ,   г)<img src="ris/3.6/form3.6.28.gif" />	; </LI>
+
+  <LI><img src="ris/3.6/form3.6.30.gif" />  ,  х - 10 =0;   </LI>
+<LI>  <img src="ris/3.6/form3.6.31.gif" />   ;   </LI>
+<LI> 10;</LI>
+ <LI>   <img src="ris/3.6/form3.6.32.gif" />	и  <img src="ris/3.6/form3.6.34.gif" />  ;	</LI>
+ <LI> а)  С  (2; - 3),  а = 3,  b = 4, <img src="ris/3.6/form3.6.35.gif" />   ,  уравнения
+директрис: <img src="ris/3.6/form3.6.36.gif" />   и <img src="ris/3.6/form3.6.37.gif" />  ,
+ уравнения асимптот:  <img src="ris/3.6/form3.6.38.gif" />,<img src="ris/3.6/form3.6.39.gif" />	 ;
+  б)  С  (- 5; 1),  а = 8,  b = 6, <img src="ris/3.6/form3.6.40.gif" />   ,
+ уравнения  директрис: <img src="ris/3.6/form3.6.52.gif" />	и <img src="ris/3.6/form3.6.53.gif" />  ,
+ уравнения асимптот: <img src="ris/3.6/form3.6.41.gif" /> , <img src="ris/3.6/form3.6.42.gif" /> </LI>
+  <LI>	а) <img src="ris/3.6/form3.6.43.gif" />   ,   б)<img src="ris/3.6/form3.6.44.gif" />	,
+	в) <img src="ris/3.6/form3.6.45.gif" />   ,   г) <img src="ris/3.6/form3.6.46.gif" />   ;   </LI>
+ <LI> F  (6; 0),<img src="ris/3.6/form3.6.47.gif" />	;   </LI>
+ <LI> (9; 12),  (9; - 12);   </LI>
+  <LI> <img src="ris/3.6/form3.6.48.gif" /> ;   </LI>
+ <LI>  (- 4; 6) - прямая касается параболы;	</LI>
+  <LI>  а)  касается параболы,   б)  пересекает параболу в двух точках,   в)  проходит вне
+   параболы.</LI>
+  </OL>
+
+   <br /><br />
+ <TABLE BORDER="0" align=CENTER width=50%>
+<TR><TD align=RIGHT><!-- ImageReady Slices (Knopka4.psd) -->
+<A HREF="3.5.html"
+	ONMOUSEOVER="changeImages('Knopka8_01', 'images/Knopka8_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka8_01', 'images/Knopka8_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka8_01', 'images/Knopka8_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka8_01', 'images/Knopka8_01-over.gif'); return true;">
+	<IMG NAME="Knopka8_01" SRC="images/Knopka8_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+<td valign=middle align=CENTER>
+<!-- ImageReady Slices (Knopka3.psd) -->
+<A HREF="content.html"
+	ONMOUSEOVER="changeImages('Knopka7_01', 'images/Knopka7_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka7_01', 'images/Knopka7_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka7_01', 'images/Knopka7_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka7_01', 'images/Knopka7_01-over.gif'); return true;">
+	<IMG NAME="Knopka7_01" SRC="images/Knopka7_01.gif" WIDTH=119 HEIGHT=42 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+<td align=Left>
+<!-- ImageReady Slices (Knopka5.psd) -->
+<A HREF="3.7.html"
+	ONMOUSEOVER="changeImages('Knopka9_01', 'images/Knopka9_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka9_01', 'images/Knopka9_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka9_01', 'images/Knopka9_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka9_01', 'images/Knopka9_01-over.gif'); return true;">
+	<IMG NAME="Knopka9_01" SRC="images/Knopka9_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+ </table>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+ <title>ЗАНЯТИЕ 2.5. СМЕШАННОЕ ПРОИЗВЕДЕНИЕ ВЕКТОРОВ</title>
+ <!-- ImageReady Preload Script (Untitled-1.psd) -->
+<SCRIPT TYPE="text/javascript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		Knopka3_01_over = newImage("images/Knopka3_01-over.gif");
+		Knopka3_01_down = newImage("images/Knopka3_01-down.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+</head>
+<body ONLOAD="preloadImages();">
+ <TABLE BORDER="0" align=CENTER width=50%>
+<TR><TD align=RIGHT><!-- ImageReady Slices (Knopka4.psd) -->
+<A HREF="2.4.html"
+	ONMOUSEOVER="changeImages('Knopka4_01', 'images/Knopka4_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka4_01', 'images/Knopka4_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka4_01', 'images/Knopka4_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka4_01', 'images/Knopka4_01-over.gif'); return true;">
+	<IMG NAME="Knopka4_01" SRC="images/Knopka4_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --></td>
+<td valign=middle align=CENTER>
+<!-- ImageReady Slices (Untitled-1.psd) -->
+<A HREF="content.html"
+	ONMOUSEOVER="changeImages('Knopka3_01', 'images/Knopka3_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka3_01', 'images/Knopka3_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka3_01', 'images/Knopka3_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka3_01', 'images/Knopka3_01-over.gif'); return true;">
+	<IMG NAME="Knopka3_01" SRC="images/Knopka3_01.gif" WIDTH=119 HEIGHT=42 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --> </td>
+
+<td align=Left><!-- ImageReady Slices (Knopka5.psd) -->
+<A HREF="3.1.html"
+	ONMOUSEOVER="changeImages('Knopka5_01', 'images/Knopka5_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka5_01', 'images/Knopka5_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka5_01', 'images/Knopka5_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka5_01', 'images/Knopka5_01-over.gif'); return true;">
+	<IMG NAME="Knopka5_01" SRC="images/Knopka5_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --></td></table>
+
+
+<h2 align="Center">ЗАНЯТИЕ 2.5. СМЕШАННОЕ ПРОИЗВЕДЕНИЕ ВЕКТОРОВ</h2>
+ <h2 align="Center">Контрольные вопросы </h2>
+  <font size=4>
+  <OL><LI>   Какая тройка векторов считается правой (левой)? </LI>
+<LI>	Что такое векторное произведение двух векторов?</LI>
+<LI>   Каков геометрический смысл модуля результата векторного произведения?</LI>
+<LI>	Как перемножить векторно векторы, заданные своими координатами в декартовой системе
+координат?</LI>
+<LI>	В чем состоит условие коллинеарности векторов? Какой вид условие коллинеарности имеет
+ в ортонормированной системе координат </LI>
+</OL>
+  <H2 align="center"><font  color="#22371E"> Задачи</font></H2>
+   <FONT  SIZE="4">
+
+   <OL><LI> 1.	Определить, какой является тройка векторов
+   <img src="ris/2.2/form2.2.16.gif" height="28" width="60" alt="" border="0" />
+	  (правой или левой),	если
+ <table border="1" cellspacing="0" cellpadding="0" style="">
+<tr>
+ <td>номер</td><td><img src="ris/2.2/form2.2.1.gif" height="25" width="21" alt="" border="0" />
+ </td><td><img src="ris/2.2/form2.2.2.gif" height="29" width="20" alt="" border="0" /> </td>
+ <td><img src="ris/2.3/form2.3.40.gif" height="22" width="17" alt="" border="0" /></td>
+</tr>
+<tr>
+ <td>а</td><td><img src="ris/2.3/form2.3.41.gif" height="25" width="17" alt="" border="0" /></td>
+ <td><img src="ris/2.3/form2.3.42.gif" height="25" width="14" alt="" border="0" /></td>
+ <td><img src="ris/2.4/form2.4.1.gif" height="27" width="17" alt="" border="0" /></td>
+</tr>
+<tr>
+ <td>б</td><td><img src="ris/2.3/form2.3.42.gif" height="25" width="14" alt="" border="0" /></td>
+ <td><img src="ris/2.3/form2.3.41.gif" height="25" width="17" alt="" border="0" /></td>
+ <td><img src="ris/2.4/form2.4.1.gif" height="27" width="17" alt="" border="0" /></td>
+</tr>
+<tr>
+ <td>в</td><td><img src="ris/2.4/form2.4.1.gif" height="27" width="17" alt="" border="0" /></td>
+ <td><img src="ris/2.3/form2.3.42.gif" height="25" width="14" alt="" border="0" /></td>
+ <td><img src="ris/2.3/form2.3.41.gif" height="25" width="17" alt="" border="0" />
+ </td>
+</tr>
+<tr>
+ <td>г</td><td><img src="ris/2.4/form2.4.2.gif" height="23" width="36" alt="" border="0" /></td>
+ <td><img src="ris/2.4/form2.4.1.gif" height="27" width="17" alt="" border="0" /></td>
+ <td><img src="ris/2.3/form2.3.41.gif" height="25" width="17" alt="" border="0" /></td>
+</tr>
+<tr>
+ <td>д</td><td><img src="ris/2.4/form2.4.2.gif" height="23" width="36" alt="" border="0" /></td>
+ <td><img src="ris/2.4/form2.4.3.gif" height="23" width="36" alt="" border="0" /></td>
+ <td><img src="ris/2.4/form2.4.1.gif" height="27" width="17" alt="" border="0" /></td>
+</tr>
+<tr>
+ <td>е</td><td><img src="ris/2.4/form2.4.2.gif" height="23" width="36" alt="" border="0" /></td>
+ <td><img src="ris/2.4/form2.4.3.gif" height="23" width="36" alt="" border="0" /></td>
+ <td><img src="ris/2.3/form2.3.41.gif" height="25" width="17" alt="" border="0" /></td>
+</tr>
+</table>
+
+	</LI>
+<LI>   Векторы <img src="ris/2.2/form2.2.1.gif" height="25" width="21" alt="" border="0" /> и
+ <img src="ris/2.2/form2.2.2.gif" height="29" width="20" alt="" border="0" />
+	образуют угол <img src="ris/2.4/form2.4.4.gif" height="25" width="69" alt="" border="0" /> .
+	Зная, что  <img src="ris/2.4/form2.4.5.gif" height="28" width="51" alt="" border="0" />,
+	<img src="ris/2.4/form2.4.6.gif" height="34" width="51" alt="" border="0" />  , вычислить
+	<img src="ris/2.4/form2.4.7.gif"  />   .   </LI>
+<LI> Даны: <img src="ris/2.4/form2.4.8.gif"  /> , <img src="ris/2.4/form2.4.9.gif"  />  и
+ <img src="ris/2.4/form2.4.10.gif"  />. Вычислить <img src="ris/2.4/form2.4.7.gif"  /> . </LI>
+<LI>  Векторы <img src="ris/2.2/form2.2.1.gif" height="25" width="21" alt="" border="0" /> и
+<img src="ris/2.2/form2.2.2.gif" height="29" width="20" alt="" border="0" />
+	 взаимно перпендикулярны. Зная, что <img src="ris/2.4/form2.4.11.gif"  /> , вычислить: <br />
+	   а)<img src="ris/2.4/form2.4.12.gif"  />  ;   б)  <img src="ris/2.4/form2.4.13.gif"  />.  </LI>
+<LI>  Векторы <img src="ris/2.2/form2.2.1.gif" height="25" width="21" alt="" border="0" /> и
+<img src="ris/2.2/form2.2.2.gif" height="29" width="20" alt="" border="0" />
+	образуют угол  <img src="ris/2.4/form2.4.14.gif"  /> . Зная, что <img src="ris/2.4/form2.4.15.gif"  /> ,
+	 вычислить: <br />  а) <img src="ris/2.4/form2.4.16.gif"  /> ;   б) <img src="ris/2.4/form2.4.17.gif"  /> ;
+		в)<img src="ris/2.4/form2.4.18.gif"  /> . </LI>
+<LI> Даны векторы  <img src="ris/2.4/form2.4.19.gif"  />.  Найти координаты векторных произведений: <br />
+ а)<img src="ris/2.4/form2.4.20.gif"  />  ;   б) <img src="ris/2.4/form2.4.21.gif"  /> ;
+  в)<img src="ris/2.4/form2.4.22.gif"  />  . </LI>
+<LI> Даны точки А(1,2,0), В(3,0,-3) и С(5,2,6). Вычислить площадь треугольника АВС.</LI>
+<LI>Даны вершины треугольника А(1,-1,2), В(5,-6,2) и С(1,3,-1). Вычислить длину его высоты,
+ опущенной из вершины В на сторону АС. </LI>
+ <LI>Вектор <img src="ris/2.4/form2.4.23.gif"  /> , перпендикулярный к векторам
+  <img src="ris/2.4/form2.4.24.gif"  />
+  и <img src="ris/2.4/form2.4.25.gif"  /> , образует с осью Оу тупой угол. Зная, что длина
+  <img src="ris/2.4/form2.4.23.gif"  /> равна 26,
+  найти
+  его координаты. </LI>
+ </OL>
+   <H2 align="center"><font  color="#22371E">Ответы </font></H2>
+ <OL><LI>а) правая;   б) левая;   в) левая;  г) правая;  д) векторы компланарны; е) левая.  </LI>
+ <LI> 15.   </LI>
+<LI> 16.	</LI>
+<LI> а) 24,  б) 60.	 </LI>
+<LI>а) 3;  б) 27;  в) 300.	</LI>
+<LI>  а) {5,1,7};   б) {10,2,4}; в)  {20,4,28}.	 </LI>
+<LI> 14 .	</LI>
+<LI>5 .	</LI>
+ <LI>{-6,-24,8}.</LI>
+</OL>
+   <br /><br />
+ <TABLE BORDER="0" align=CENTER width=50%>
+<TR><TD align=RIGHT><!-- ImageReady Slices (Knopka4.psd) -->
+<A HREF="2.4.html"
+	ONMOUSEOVER="changeImages('Knopka8_01', 'images/Knopka8_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka8_01', 'images/Knopka8_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka8_01', 'images/Knopka8_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka8_01', 'images/Knopka8_01-over.gif'); return true;">
+	<IMG NAME="Knopka8_01" SRC="images/Knopka8_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+<td valign=middle align=CENTER>
+<!-- ImageReady Slices (Knopka3.psd) -->
+<A HREF="content.html"
+	ONMOUSEOVER="changeImages('Knopka7_01', 'images/Knopka7_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka7_01', 'images/Knopka7_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka7_01', 'images/Knopka7_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka7_01', 'images/Knopka7_01-over.gif'); return true;">
+	<IMG NAME="Knopka7_01" SRC="images/Knopka7_01.gif" WIDTH=119 HEIGHT=42 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+<td align=Left>
+<!-- ImageReady Slices (Knopka5.psd) -->
+<A HREF="3.1.html"
+	ONMOUSEOVER="changeImages('Knopka9_01', 'images/Knopka9_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka9_01', 'images/Knopka9_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka9_01', 'images/Knopka9_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka9_01', 'images/Knopka9_01-over.gif'); return true;">
+	<IMG NAME="Knopka9_01" SRC="images/Knopka9_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+ </table>
+
+
+
+
+
+</body>
+</html>

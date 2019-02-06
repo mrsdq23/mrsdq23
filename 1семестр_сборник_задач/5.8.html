@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+ <title> ЗАНЯТИЕ 5.8.  ИНТЕРВАЛЫ МОНОТОННОСТИ ФУНКЦИИ,
+ ЭКСТРЕМУМЫ ФУНКЦИИ</title>
+ <!-- ImageReady Preload Script (Untitled-1.psd) -->
+<SCRIPT TYPE="text/javascript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		Knopka3_01_over = newImage("images/Knopka3_01-over.gif");
+		Knopka3_01_down = newImage("images/Knopka3_01-down.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</SCRIPT>
+<!-- End Preload Script -->
+</head>
+<body ONLOAD="preloadImages();">
+ <TABLE BORDER="0" align=CENTER width=50%>
+<TR><TD align=RIGHT><!-- ImageReady Slices (Knopka4.psd) -->
+<A HREF="5.7.html"
+	ONMOUSEOVER="changeImages('Knopka4_01', 'images/Knopka4_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka4_01', 'images/Knopka4_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka4_01', 'images/Knopka4_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka4_01', 'images/Knopka4_01-over.gif'); return true;">
+	<IMG NAME="Knopka4_01" SRC="images/Knopka4_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --></td>
+<td valign=middle align=CENTER>
+<!-- ImageReady Slices (Untitled-1.psd) -->
+<A HREF="content.html"
+	ONMOUSEOVER="changeImages('Knopka3_01', 'images/Knopka3_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka3_01', 'images/Knopka3_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka3_01', 'images/Knopka3_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka3_01', 'images/Knopka3_01-over.gif'); return true;">
+	<IMG NAME="Knopka3_01" SRC="images/Knopka3_01.gif" WIDTH=119 HEIGHT=42 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --> </td>
+
+<td align=Left><!-- ImageReady Slices (Knopka5.psd) -->
+<A HREF="5.9.html"
+	ONMOUSEOVER="changeImages('Knopka5_01', 'images/Knopka5_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka5_01', 'images/Knopka5_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka5_01', 'images/Knopka5_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka5_01', 'images/Knopka5_01-over.gif'); return true;">
+	<IMG NAME="Knopka5_01" SRC="images/Knopka5_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices --></td></table>
+
+
+<h2 align="Center">  ЗАНЯТИЕ 5.8.  ИНТЕРВАЛЫ МОНОТОННОСТИ ФУНКЦИИ,
+ ЭКСТРЕМУМЫ ФУНКЦИИ
+ </h2>
+   <H2 align="center"><font  color="#22371E"> Контрольные вопросы</font></H2>
+ <FONT  SIZE="4">
+  <OL><LI>Что называется формулой Тейлора и формулой Маклорена? </LI>
+<LI> Что называется остаточным членом формулы Тейлора?</LI>
+ <LI> Какой вид имеет формула Маклорена для функции <img src="ris/5.7/form5.7.1.gif" />,
+  <img src="ris/5.7/form5.7.2.gif" />,  <img src="ris/5.7/form5.7.3.gif" />  ? </LI>
+ </OL>
+  <H2 align="center"><font  color="#22371E"> Задачи</font></H2>
+   <FONT  SIZE="4">
+   <OL>
+   <LI>  Написать формулу Тейлора <img src="ris/5.7/form5.7.4.gif" /> -ого порядка для функций:
+
+	  <br /> 1)  <img src="ris/5.7/form5.7.5.gif" />  при <img src="ris/5.7/form5.7.6.gif" /> .
+   <br /> 2)   <img src="ris/5.7/form5.7.7.gif" /> при <img src="ris/5.7/form5.7.8.gif" /> .
+	<br />3)	<img src="ris/5.7/form5.7.9.gif" />при  <img src="ris/5.7/form5.7.10.gif" />.
+	<br />4)   <img src="ris/5.7/form5.7.11.gif" /> при  <img src="ris/5.7/form5.7.12.gif" />.
+	<br />5)  <img src="ris/5.7/form5.7.13.gif" />  при <img src="ris/5.7/form5.7.6.gif" /> .   </li>
+	<li>Написать формулу Маклорена <img src="ris/5.7/form5.7.4.gif" /> -ого порядка для функции
+	 <img src="ris/5.7/form5.7.15.gif" /> .</li>
+	<li>Используя формулу Маклорена для функций <img src="ris/5.7/form5.7.1.gif" /> ,
+	  <img src="ris/5.7/form5.7.2.gif" />, <img src="ris/5.7/form5.7.3.gif" /> , написать формулы
+	   Маклорена для функции
+<br />1)<img src="ris/5.7/form5.7.19.gif" />  ,   2)<img src="ris/5.7/form5.7.20.gif" />  ,
+ 3) <img src="ris/5.7/form5.7.21.gif" /> .
+</li>
+<li>Пользуясь приближенной формулой <img src="ris/5.7/form5.7.22.gif" /> , найти
+<br />1)<img src="ris/5.7/form5.7.23.gif" />  ,   2) <img src="ris/5.7/form5.7.24.gif" /> ,
+  3) <img src="ris/5.7/form5.7.25.gif" /> ,   4)<img src="ris/5.7/form5.7.26.gif" />   <br />и
+  оценить погрешность.  </li>
+<li>Какого порядка следует брать формулу Маклорена для функций <img src="ris/5.7/form5.7.3.gif" />,
+<img src="ris/5.7/form5.7.2.gif" /> , чтобы вычислить
+<br />1)<img src="ris/5.7/form5.7.28.gif" />   с точностью  <img src="ris/5.7/form5.7.29.gif" />,
+  2) <img src="ris/5.7/form5.7.30.gif" />  с точностью  <img src="ris/5.7/form5.7.31.gif" />,
+<br />3) <img src="ris/5.7/form5.7.32.gif" />  с точностью  <img src="ris/5.7/form5.7.33.gif" />,
+4)<img src="ris/5.7/form5.7.34.gif" />   с точностью  <img src="ris/5.7/form5.7.35.gif" />. </li>
+<li>Пользуясь приближенной формулой <img src="ris/5.7/form5.7.36.gif" /> , найти:
+<br />1)<img src="ris/5.7/form5.7.37.gif" />  ;   2)<img src="ris/5.7/form5.7.38.gif" />  ;
+  3)<img src="ris/5.7/form5.7.39.gif" />   и оценить погрешность.
+</li>
+
+ </OL>
+   <H2 align="center"><font  color="#22371E">Ответы </font></H2>
+	<OL><li>1) <img src="ris/5.7/form5.7.40.gif" />  ;
+   <br /> 2)<img src="ris/5.7/form5.7.41.gif" /> <br /> <img src="ris/5.7/form5.7.42.gif" />;
+   <br /> 3) <img src="ris/5.7/form5.7.43.gif" /> <br /> <img src="ris/5.7/form5.7.44.gif" />;
+   <br /> 4)  <img src="ris/5.7/form5.7.45.gif" /> <br /><img src="ris/5.7/form5.7.46.gif" />;
+	<br />5)  <img src="ris/5.7/form5.7.47.gif" /> <br /> <img src="ris/5.7/form5.7.48.gif" />;
+</li>
+  <li> <img src="ris/5.7/form5.7.49.gif" />; </li>
+  <li>1) <img src="ris/5.7/form5.7.50.gif" /> <br /><img src="ris/5.7/form5.7.51.gif" />,
+<br />2) <img src="ris/5.7/form5.7.52.gif" /> <br /><img src="ris/5.7/form5.7.53.gif" />,
+<br />3) <img src="ris/5.7/form5.7.54.gif" /> ,
+</li>
+  <li>1) <img src="ris/5.7/form5.7.55.gif" /> <br />   2)  <img src="ris/5.7/form5.7.56.gif" />
+<br />3)  <img src="ris/5.7/form5.7.57.gif" />
+<br />4)   <img src="ris/5.7/form5.7.58.gif" />
+</li>
+  <li>1) <img src="ris/5.7/form5.7.59.gif" />   <br /> 2) <img src="ris/5.7/form5.7.60.gif" />
+<br />3)<img src="ris/5.7/form5.7.61.gif" />   <br />  4)  <img src="ris/5.7/form5.7.62.gif" />
+</li>
+  <li>1) <img src="ris/5.7/form5.7.63.gif" />
+<br />2) <img src="ris/5.7/form5.7.64.gif" />
+<br />3)<img src="ris/5.7/form5.7.65.gif" />
+</li>
+
+ </OL>
+
+
+
+   <H2 align="center"><font  color="#22371E">Ответы </font></H2>
+	<OL>
+   <LI>1) <img src="ris/5.6/form5.6.27.gif" />  ,  <br /> 2)<img src="ris/5.6/form5.6.16.gif" />   ,
+	 <br /> 3)<img src="ris/5.6/form5.6.17.gif" />   , <br />  4)<img src="ris/5.6/form5.6.18.gif" />   ,
+	   <br /> 5)<img src="ris/5.6/form5.6.18.gif" />   ,   <br />6) <img src="ris/5.6/form5.6.16.gif" />  ,
+   <br />   7)<img src="ris/5.6/form5.6.19.gif" />   , <br />  8) <img src="ris/5.6/form5.6.20.gif" />  ,
+	<br /> 9)<img src="ris/5.6/form5.6.28.gif" />   , <br />  10) <img src="ris/5.6/form5.6.22.gif" />  ,
+<br />11)<img src="ris/5.6/form5.6.23.gif" />   ,<br />   12)<img src="ris/5.6/form5.6.18.gif" />   ,
+   <br />13) <img src="ris/5.6/form5.6.23.gif" />  , <br />  14) <img src="ris/5.6/form5.6.24.gif" />  ,
+	 <br /> 15)<img src="ris/5.6/form5.6.23.gif" />   .
+
+</li>
+ </OL>
+
+
+
+   <br /><br />
+ <TABLE BORDER="0" align=CENTER width=50%>
+<TR><TD align=RIGHT><!-- ImageReady Slices (Knopka4.psd) -->
+<A HREF="5.7.html"
+	ONMOUSEOVER="changeImages('Knopka8_01', 'images/Knopka8_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka8_01', 'images/Knopka8_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka8_01', 'images/Knopka8_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka8_01', 'images/Knopka8_01-over.gif'); return true;">
+	<IMG NAME="Knopka8_01" SRC="images/Knopka8_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+<td valign=middle align=CENTER>
+<!-- ImageReady Slices (Knopka3.psd) -->
+<A HREF="content.html"
+	ONMOUSEOVER="changeImages('Knopka7_01', 'images/Knopka7_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka7_01', 'images/Knopka7_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka7_01', 'images/Knopka7_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka7_01', 'images/Knopka7_01-over.gif'); return true;">
+	<IMG NAME="Knopka7_01" SRC="images/Knopka7_01.gif" WIDTH=119 HEIGHT=42 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+<td align=Left>
+<!-- ImageReady Slices (Knopka5.psd) -->
+<A HREF="5.9.html"
+	ONMOUSEOVER="changeImages('Knopka9_01', 'images/Knopka9_01-over.gif'); return true;"
+	ONMOUSEOUT="changeImages('Knopka9_01', 'images/Knopka9_01.gif'); return true;"
+	ONMOUSEDOWN="changeImages('Knopka9_01', 'images/Knopka9_01-down.gif'); return true;"
+	ONMOUSEUP="changeImages('Knopka9_01', 'images/Knopka9_01-over.gif'); return true;">
+	<IMG NAME="Knopka9_01" SRC="images/Knopka9_01.gif" WIDTH=82 HEIGHT=53 BORDER=0 ALT=""></A>
+<!-- End ImageReady Slices -->
+ </table>
+
+
+
+
+
+</body>
+</html>
